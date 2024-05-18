@@ -1,4 +1,4 @@
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](URL)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/brentlaster/codeium-basics)
 
 
 # Codeium Basics - lab setup
