@@ -1,15 +1,15 @@
 # Codeium Basics
 ## Practical Tips and Best Practices
 ## Session labs
-## Revision 1.0 - 05/17/24
+## Revision 1.0 - 05/18/24
 
 **Follow the startup instructions in the README.md file IF NOT ALREADY DONE!**
 
 **NOTE: To copy and paste in the codespace, you may need to use keyboard commands - CTRL-C and CTRL-V.**
 
-**Lab 1 - Learning how to create good prompts for Copilot**
+**Lab 1 - Learning how to create good prompts for Codeium**
 
-**Purpose: In this lab, we’ll start to learn about Copilot and how it generates code based on the prompts we provide**
+**Purpose: In this lab, we’ll start to learn about Codeium and how it generates code based on the prompts we provide**
 
 1. Create a new file. In the terminal, enter
 
@@ -19,18 +19,18 @@
 
 2. Afterwards this file should be open in a tab in the editor.
 
-3. Let's see how Copilot responds to a generic request. Go to that tab and type in a comment that says
+3. Let's see how Codeium responds to a generic request. Go to that tab and type in a comment that says
 
 ```
 // function to parse data
 ```
-4. Hit return and notice the code that Copilot suggested. This is likely more generic than we want, but hit tab to select that line.
+4. Hit return and notice the code that Codeium suggested. This is likely more generic than we want, but hit tab to select that line.
    
-5. After hitting tab, Copilot will generate another part of the function. (If not, you may need to hit return.) Hit tab to accept it. Continue until you get a complete function. One example of what code may look like is below.
+5. After hitting tab, Codeium will generate another part of the function. (If not, you may need to hit return.) Hit tab to accept it. Continue until you get a complete function. One example of what code may look like is below.
 
-![Copilot generated function](./images/cpho5.png?raw=true "Copilot generated function")
+![Codeium generated function](./images/codeium-15.png?raw=true "Codeium generated function")
    
-6. This prompt is not specific enough for Copilot to interpret what we want to do.  Highlight the code and delete it, so we can try again.
+6. This prompt is not specific enough for Codeium to interpret what we want to do.  Highlight the code and delete it, so we can try again.
 
 7. Now type a comment at the top that says
 
@@ -43,35 +43,23 @@
 function parseURL(url) {
 ```
 
-9. Just hit Tab to accept it and Enter again. After that Copilot may or may not offer a suggestion.  If it does, great - you can just hit Tab and accept it.  If not, it may be necessary to further "nudge" Copilot by giving more prompts. Only if you're not getting responses from Copilot, hit return and type the comment below to nudge Copilot.
+9. Just hit Tab to accept it and Enter again. Continue to use Tab and Enter to build out the function from the suggestions that Codeium provides until you get a complete function definition - something like shown below.
 
-```
-// parse url
-```
-![nudge comment](./images/cdd3.png?raw=true "nudge comment")   
+![Codeium generated function](./images/codeium-16.png?raw=true "Codeium generated function")    
 
-10. Only if needed, hit return and Copilot should start generating suggestions again. You can just hit tab to accept each line and then return to get the next part of the code until the function is complete. You may get some blank lines along the way - just hit return until you get to the end of a function. (You will be at the end when the indentation is done.  Also Copilot may start to suggest another function in comments like // test...)
-
-11. Suppose you're not happy with that suggestion. Copilot can provide other options for the code. To see those, make sure you are in the editor for the file, highlight/select the existing code and hit **Ctrl + Enter**. A second window will open up with other suggestions.
-Be patient - it takes a bit of time for Copilot to generate alternative suggestions. After a moment though, you will have up to 10 alternatives to pick from.
-You can scan through these and then pick a different one if you want by clicking on the "Accept Solution" button under the alternative suggestion.  Note that this will add the code to the existing set, so you may want to delete the other code first.
-
-![alternative suggestions](./images/cdd4.png?raw=true "alternative suggestions")   
-
-12. Let's do one more pass at getting a specific prompt for Copilot. Delete all the code currently in index.js. This time we will not enter a comment, but will enter a specific funtion name.
+10. Let's do one more pass at getting a specific prompt for Copilot. Delete all the code currently in index.js. This time we will not enter a comment, but will enter a specific funtion name.
 Type the following in the empty file. (There are no parentheses after the *splitURLandReturnComponents* text.)  Do not hit tab or return yet.
 
 ```
 function splitURLandReturnComponents
 ```
 
-13.  With this function name, Copilot should suggest a full function definition - in fact it may suggest several.  To see the options, hover over the first line and a small window should appear. This window will not how many options there are (probably 2 or 3) and provide "<" and ">" links to toggle between them.  Click on the "<" and ">" buttons to see the differences in the available suggestions.
+11.  With this function name, Copilot should suggest a full function definition - in fact it may suggest several.  To see the options, hover over the first line and a small window should appear. This window will note how many options there are and provide "<" and ">" links to toggle between them.  Click on the "<" and ">" buttons to see the differences in the available suggestions. Some may be full function suggestions and others may be only partial suggestions.  Choose an alternative you like and then select Tab to accept it.
 
-![alternative suggestions inline](./images/cdd5b.png?raw=true "alternative suggestions inline")   
+![alternative suggestions inline](./images/codeium-17.png?raw=true "alternative suggestions inline")   
 
-14. When you find an alternative you like, go ahead and tab to select it.
 
- <p align="center">
+<p align="center">
 **[END OF LAB]**
 </p>
 
@@ -87,40 +75,36 @@ code prime.py
 ```
 def is_prime(n
 ```
-3. Pick one of the offered suggestions and hit Tab.
+3. Pick one of the offered suggestions and hit Tab. Continue until you get a full function definition. One example is shown below.
 
-4. Highlight the text and hit **Ctrl+Enter** to see options
+![alternative suggestions inline](./images/codeium-18.png?raw=true "alternative suggestions inline")   
 
-5. Pick one of the options that is longer and/or more complex (if there is one) and **Accept Solution**. If there's not one that's longer/more complex, just pick an alternative one and **Accept Solution**.
+5. Let's have Codeium explain how this function works. In the Codelens menu above the code, click on the *Explain* link. Notice that the output shows up in the Codeium Chat interface.
 
-![alternative suggestions](./images/cdd34b.png?raw=true "alternative suggestions") 
+![alternative suggestions inline](./images/codeium-19.png?raw=true "alternative suggestions inline") 
 
-6. Highlight the code and select the Chat extension icon to open the chat window.  Tell Copilot to simplify the code by typing in the chat window.
+6. We can also use shortcut commands to do these same kind of tasks. In the Codeium Chat interface, enter the text below to see similar results.
 ```
-/simplify
+/explain is_prime
 ```
+![explain in chat](./images/codeium-24.png?raw=true "explain in chat") 
 
-![simplifying via chat box](./images/cdd35.png?raw=true "simplifying via chat box") 
+7. Let's next try some of the refactor options provided by Codeium. Click on the *Refactor* link in the Codelens menu above the code. Then select the option to *Make this faster and more efficient* (You can click on the entry in the list or type in the selection in the text entry area.)
 
-7. Hover over the simplified text and tell Copilot to insert the suggestion at the cursor to replace the text that's currently there.
+![refactor for efficiency](./images/codeium-25.png?raw=true "refactor for efficiency")         
 
-![replace from chat suggestion](./images/cdd36b.png?raw=true "replace from chat suggestion")    
+8. Codeium will then generate any suggested changes inline. Give it a moment to complete and then click on *Accept* to accept the changes.
 
-8. Now, let's introduce an error into the code to see how Copilot can fix it. Pick an instance of a variable name and change it to one that doesn't exist. For example, change an instance of "n" to "x". 
+![refactor to add comments](./images/codeium-26.png?raw=true "refactor to add comments") 
 
-![introduce error](./images/cdd37b.png?raw=true "introduce error")   
+9. Next, click on the *refactor* link and select the option to *Clean up this code*.
 
-9. Notice the light bulb icon that has popped up. Click on that, scroll to the bottom (if needed), and you'll have additional options to fix or explain with Copilot.
+![refactor to clean up code](./images/codeium-22.png?raw=true "refactor to clean up code") 
+  
+10. Give Codeium a moment to generate is suggested changes. This time after reviewing, we'll reject the changes. Click on the *Reject* option.
 
-![Copilot options inline](./images/cdd38b.png?raw=true "Copilot options inline")   
+![refactor to clean up code](./images/codeium-27.png?raw=true "refactor to clean up code")     
 
-10. Go ahead and click on the "Fix using Copilot" option.
-
-11. After a few moments, it will propose a fix that you can just accept (via the Accept button).
-
-![Fixing with Copilot](./images/cdd39b.png?raw=true "Fixing with Copilot")       
-
-12. (Optional) If you'd like, you can go back and make the error again, highlight the code, and then use the /fix command in the chat window to get the same results.
 
 <p align="center">
 **[END OF LAB]**
