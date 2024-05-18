@@ -1,34 +1,16 @@
 // README at: https://github.com/devcontainers/templates/tree/main/src/python
 {
-	"name": "Python 3",
-	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/python:0-3.11",
 
-	// Features to add to the dev container. More info: https://containers.dev/features.
-	"features": {
-		"ghcr.io/devcontainers/features/github-cli:1": {}
-	},
 	// Configure tool-specific properties.
 	"customizations": {
 		// Configure properties specific to VS Code.
 		"vscode": {
-			"settings": {
-				"editor.rulers": [80],
-				"editor.renderWhitespace": "boundary",
-				"errorLens.gutterIconsEnabled": true,
-				"errorLens.addAnnotationTextPrefixes": false,
-				"errorLens.enabledDiagnosticLevels": ["error", "warning"],
-			        "editor.wordWrap": "bounded",
-				"editor.wordWrapColumn": 9999
-			},
+			
 			"extensions": [
 				"Codeium.codeium"
 			]
 		}
-	},
+	}
 
-
-	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "pip3 install -r requirements.txt"
 
 }
