@@ -63,7 +63,7 @@ function splitURLandReturnComponents
 **[END OF LAB]**
 </p>
 
-**Lab 2 - Using Copilot to simplify and explain code**
+**Lab 2 - Using Codeium to manage existing code**
 
 1. Create a new file named prime.py. Create it via the same process as we used in Lab 1 by entering the line below in the terminal.
 
@@ -79,33 +79,31 @@ def is_prime(n
 
 ![alternative suggestions inline](./images/codeium-18.png?raw=true "alternative suggestions inline")   
 
-5. Let's have Codeium explain how this function works. In the Codelens menu above the code, click on the *Explain* link. Notice that the output shows up in the Codeium Chat interface.
-
-![alternative suggestions inline](./images/codeium-19.png?raw=true "alternative suggestions inline") 
-
-6. We can also use shortcut commands to do these same kind of tasks. In the Codeium Chat interface, enter the text below to see similar results.
-```
-/explain is_prime
-```
-![explain in chat](./images/codeium-24.png?raw=true "explain in chat") 
-
-7. Let's next try some of the refactor options provided by Codeium. Click on the *Refactor* link in the Codelens menu above the code. Then select the option to *Make this faster and more efficient* (You can click on the entry in the list or type in the selection in the text entry area.)
+4. Let's next try some of the refactor options provided by Codeium. Click on the *Refactor* link in the Codelens menu above the code. Then select the option to *Make this faster and more efficient* (You can click on the entry in the list or type in the selection in the text entry area.)
 
 ![refactor for efficiency](./images/codeium-25.png?raw=true "refactor for efficiency")         
 
-8. Codeium will then generate any suggested changes inline. Give it a moment to complete and then click on *Accept* to accept the changes.
+5. Codeium will then generate any suggested changes inline. Give it a moment to complete and then click on *Accept* to accept the changes.
 
-![refactor to add comments](./images/codeium-26.png?raw=true "refactor to add comments") 
+![refactor to add comments](./images/codeium-32.png?raw=true "refactor to add comments") 
 
-9. Next, click on the *refactor* link and select the option to *Clean up this code*.
+6. Next, click on the *Refactor* link and select the option to *Clean up this code*.
 
 ![refactor to clean up code](./images/codeium-22.png?raw=true "refactor to clean up code") 
   
-10. Give Codeium a moment to generate is suggested changes. This time after reviewing, we'll reject the changes. Click on the *Reject* option.
+7. Give Codeium a moment to generate is suggested changes. This time after reviewing, we'll reject the changes. Click on the *Reject* option.
 
-![refactor to clean up code](./images/codeium-27.png?raw=true "refactor to clean up code")     
+![refactor to clean up code](./images/codeium-33.png?raw=true "refactor to clean up code")     
 
+8. Finally, let's add some print statements for debugging. Select the *Refactor* link again and this time, start typing "Add print" in the text box to filter the choices. You can then select the full option from the filtered list.
 
+![refactor to add print statements](./images/codeium-34.png?raw=true "refactor to add print statements")  
+
+9. After a moment, Codeium will suggest a set of changes for adding the print statements. You can just go ahead and accept these.
+
+![refactor to add print statements](./images/codeium-35.png?raw=true "refactor to add print statements")  
+
+    
 <p align="center">
 **[END OF LAB]**
 </p>
@@ -115,6 +113,17 @@ def is_prime(n
 **Purpose: In this lab, we’ll see a few other ways to leverage Copilot after the initial coding is done**
 
 1. Now that we have some code to work with, let's see what else Copilot can do for us. Let's have it explain the current code in our *prime.py* file.  Select the code. Then, use the **Cmd+I** keys to bring up the Copilot interactive chat dialog.
+
+
+5. Let's have Codeium explain how this function works. In the Codelens menu above the code, click on the *Explain* link. Notice that the output shows up in the Codeium Chat interface.
+
+![alternative suggestions inline](./images/codeium-19.png?raw=true "alternative suggestions inline") 
+
+6. We can also use shortcut commands to do these same kind of tasks. In the Codeium Chat interface, enter the text below to see similar results.
+```
+/explain is_prime
+```
+![explain in chat](./images/codeium-24.png?raw=true "explain in chat") 
 
 ![Interactively telling Copilot to explain code](./images/cdd40b.png?raw=true "Interactively telling Copilot to explain code")
 
