@@ -158,68 +158,58 @@ def is_prime(n
 
 11. Finally, let's have Codeium add some more comments in our code. Click on the *Refactor* link again and this time, select the last item *Verbosely comment this code so that I can understand what's going on. When Codeium finishes the suggestions, you can just *Accept* them. (If there is some part of the proposed change that you don't like, you can just delete those lines.)
 
-![apply docstring](./images/codeium-46.png?raw=true "apply docstring")  
+![add comments](./images/codeium-46.png?raw=true "add comments")  
     
-
-
-2. Tell Copilot to explain the code by typing the command below in the dialog. (Note, the actual word may not show up after you type.) Hit Enter. Then, you should see the output in the chat window.
-
-```
-/explain
-```
-![Output of interactively telling Copilot to explain code](./images/cdd41b.png?raw=true "Output of interactively telling Copilot to explain code")
-
-3. Now, let's do the same request but through a comment. In the *prime.py* file, below the code, enter the following comment and hit Enter.
-```
-# explain the code above line-by-line
-```
-4. After this, Copilot should start showing the explanation in comments. Just hit tab to accept each line and then Enter to move to the next one.
-
-![Output of telling Copilot to explain code via comment](./images/cdd42b.png?raw=true "Output of telling Copilot to explain code via comment")
-
-5. We can also query Copilot inline via asking a question in a comment. Delete the commented explanation and try out the question below. To be clear you can prefix it with :q but that is not required with the chat feature installed.
-
-```
-# q: what does the function above do?
-```
-
-![Prompting for what code does with q:](./images/cdd43b.png?raw=true "Prompting for what code does with q:")
-
-6. Finally, let's see how to use the doc feature to automatically document our code. Highlight the actual code.
-
-7. Now, enter **Cmd+I** and enter the **/doc** command. After a few moments, Copilot should generate some documentation for the code. Do not Accept or Discard yet.
-
-![Generated doc for the code](./images/cdd44b.png?raw=true "Generated doc for the code")  
-
-8. Let's see what other doc could be generated. Click on the circular arrow button next to Discard at the bottom of the dialog and click on it to regenerate another possible doc.
-
-![Regenerating doc](./images/cdd45b.png?raw=true "Regenerating doc")  
-
-9. Once you find a doc example you like, go ahead and click **Accept**.
 
 <p align="center">
 **[END OF LAB]**
 </p>
 
-**Lab 4 - Using Copilot to generate tests**
+**Lab 4 - Using Codeium to generate tests**
 
-**Purpose: In this lab, we'll see some examples of having Copilot generate tests**
+**Purpose: In this lab, we'll see some examples of having Codeium automatically generate testscases for our code**
 
-1. Start out in the *prime.py* file we've been using. Position the cursor below the code.
-
-2. Enter a comment to create unit tests
-```
-# create a function to do 5 unit tests of the code above
-```
-
-3. *If you don't get a suggestion*, enter code below to start nudging. Otherwise you can just accept the suggestion.
+1. Start out in the *prime.py* file we've been using. Bring up the inline chat interface with *CMD+I* and enter the following directive. Then click on the *Codeium: Submit* button.
 
 ```
+# create a function to do 5 unit tests of the code
+```
+![generating tests via comment](./images/codeium-47.png?raw=true "generating tests via comment") 
+
+2. This gives us a set of unit tests, but let's see what other ways we can generate testing code. Go ahead and *Reject* the suggestion.
+
+![suggested tests via comment](./images/codeium-48.png?raw=true "suggested tests via comment") 
+
+3. Bring up the inline chat interface with *CMD+I* and enter the following directive. Then click on the *Codeium: Submit* button.
+
+```
+# /test
+```
+![generating tests via comment](./images/codeium-49.png?raw=true "generating tests via comment") 
+
+4. Similar to the last option, this gives us a set of unit tests, but we may still be able to do better. Go ahead and *Reject* the suggestion.
+
+![suggested tests via comment](./images/codeium-50.png?raw=true "suggested tests via comment") 
+
+
+5. Bring up the inline chat interface again with *CMD+I* and enter the following directive. Then click on the *Codeium: Submit* button.
+
+```
+# /test-suite
+```
+![generating tests via comment](./images/codeium-51.png?raw=true "generating tests via comment") 
+
+4. Similar to the last option, this gives us a set of unit tests, but we may still be able to do better. Go ahead and *Reject* the suggestion.
+
+![suggested tests via comment](./images/codeium-52.png?raw=true "suggested tests via comment") 
 def test_is_prime():
 ```
 ![generating tests via comment](./images/cdd46.png?raw=true "generating tests via comment") 
 
-4. Let's try a slightly different way of generating tests.  First, highlight and delete any parts of the current test function, including comments.
+5. Let's try a slightly different way of generating tests.  Switch to the Chat interface and enter the following text. When you get the @prim part typed, Codeium should give you a choice to 
+```
+ How would you design a comprehensive test suite for the code in @prim
+```
 
 5. Let's have chat generate the tests.  Go ahead and highlight/delete any existing ones and the test function in the prime.py file.
 
