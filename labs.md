@@ -108,24 +108,58 @@ def is_prime(n
 **[END OF LAB]**
 </p>
 
-**Lab 3 - Using Copilot after the coding**
+**Lab 3 - Using Codeium to explain and document code**
 
-**Purpose: In this lab, we’ll see a few other ways to leverage Copilot after the initial coding is done**
+**Purpose: In this lab, we’ll see a few other ways to leverage Codeium the initial coding is done**
 
-1. Now that we have some code to work with, let's see what else Copilot can do for us. Let's have it explain the current code in our *prime.py* file.  Select the code. Then, use the **Cmd+I** keys to bring up the Copilot interactive chat dialog.
+1. Let's have Codeium explain how our current function works. In the Codelens menu above the code, click on the *Explain* link. 
 
+![explain link](./images/codeium-36.png?raw=true "explain link") 
 
-5. Let's have Codeium explain how this function works. In the Codelens menu above the code, click on the *Explain* link. Notice that the output shows up in the Codeium Chat interface.
+2. The explanation is provided in the Codeium chat window. Notice the context that Codeium used (section *A* in the screenshot) and the full explanation (section *B* in the screenshot).
 
-![alternative suggestions inline](./images/codeium-19.png?raw=true "alternative suggestions inline") 
+![explain link](./images/codeium-37.png?raw=true "explain link") 
 
-6. We can also use shortcut commands to do these same kind of tasks. In the Codeium Chat interface, enter the text below to see similar results.
+3. Suppose we want to save this chat for future reference or to easily share.. Click on the 3 vertical dots in the upper right of the *CHAT* tab.
+
+![chat menu](./images/codeium-38.png?raw=true "chat menu") 
+
+4. Next, click on the *Export Conversation* item and download the file as a .md (*markdown*) text file.
+
+![download markdown file](./images/codeium-39.png?raw=true "download markdown file") 
+
+5. From wherever you downloaded it to, you can open up the .md file and view it.
+
+![view chat file](./images/codeium-40.png?raw=true "view chat file")    
+
+6. We can also use shortcut commands to do these same kind of tasks. In the Codeium Chat interface, enter the text below to see the results. Notice the results may be more in a numbered list order than the free-form text previously used.
 ```
 /explain is_prime
 ```
-![explain in chat](./images/codeium-24.png?raw=true "explain in chat") 
+![explain in chat](./images/codeium-41.png?raw=true "explain in chat") 
 
 ![Interactively telling Copilot to explain code](./images/cdd40b.png?raw=true "Interactively telling Copilot to explain code")
+
+7. We are done with the explanations, so let's clear those Chats from the history. Click on the *Conversations* icon (the one that looks like a clockface with a circular arrow) and select that.
+
+![conversations icon](./images/codeium-42.png?raw=true "conversations icon")    
+
+8. From this screen, you'll see a list of any previous chats. Hover over any chats that you want to delete, and click on the trash can icon to delete the chat. Then, when done, click on the *Back to chat* link to return back to the main chat interface.
+
+![conversations icon](./images/codeium-43.png?raw=true "conversations icon")    
+
+9. Next, let's generate some doc for this code. Click on the *Generate Docstring* link in the Codelens section.
+
+![generate docstring](./images/codeium-44.png?raw=true "generate docstring")    
+
+10. The proposed change will show up in the chat interface. When it is ready, you can click on the *Apply Diff* link and then *Accept* the change in the editor.
+
+![apply docstring](./images/codeium-45.png?raw=true "apply docstring")  
+
+11. Finally, let's have Codeium add some more comments in our code. Click on the *Refactor* link again and this time, select the last item *Verbosely comment this code so that I can understand what's going on. When Codeium finishes the suggestions, you can just *Accept* them. (If there is some part of the proposed change that you don't like, you can just delete those lines.)
+
+![apply docstring](./images/codeium-46.png?raw=true "apply docstring")  
+    
 
 
 2. Tell Copilot to explain the code by typing the command below in the dialog. (Note, the actual word may not show up after you type.) Hit Enter. Then, you should see the output in the chat window.
