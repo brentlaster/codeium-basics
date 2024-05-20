@@ -185,46 +185,40 @@ def is_prime(n
 ```
 # /test
 ```
-![generating tests via comment](./images/codeium-49.png?raw=true "generating tests via comment") 
+![generating tests via command](./images/codeium-49.png?raw=true "generating tests via command") 
 
 4. Similar to the last option, this gives us a set of unit tests, but we may still be able to do better. Go ahead and *Reject* the suggestion.
 
-![suggested tests via comment](./images/codeium-50.png?raw=true "suggested tests via comment") 
+![suggested tests via command](./images/codeium-50.png?raw=true "suggested tests via command") 
 
-
-5. Bring up the inline chat interface again with *CMD+I* and enter the following directive. Then click on the *Codeium: Submit* button.
-
-```
-# /test-suite
-```
-![generating tests via comment](./images/codeium-51.png?raw=true "generating tests via comment") 
-
-4. Similar to the last option, this gives us a set of unit tests, but we may still be able to do better. Go ahead and *Reject* the suggestion.
-
-![suggested tests via comment](./images/codeium-52.png?raw=true "suggested tests via comment") 
-def test_is_prime():
-```
-![generating tests via comment](./images/cdd46.png?raw=true "generating tests via comment") 
-
-5. Let's try a slightly different way of generating tests.  Switch to the Chat interface and enter the following text. When you get the @prim part typed, Codeium should give you a choice to 
+5. Let's try a slightly different way of generating tests.  Switch to the Chat interface and enter the following text. When you get the *"@prim"* part typed, Codeium should give you a popup to select the *is_prime()* function as shown in the screenshot below. Choose that and then hit return to issue the query to Codeium.
 ```
  How would you design a comprehensive test suite for the code in @prim
 ```
+![suggested tests via chat](./images/codeium-51.png?raw=true "suggested tests via chat") 
 
-5. Let's have chat generate the tests.  Go ahead and highlight/delete any existing ones and the test function in the prime.py file.
+6. After a few moments, Codeium should propose a set of steps for the test suite in the Chat interface, along with example code afterwards.
 
-6. Select the set of code for *is_prime*. Then Go to chat and tell it to generate tests
+![suggested tests via chat](./images/codeium-52.png?raw=true "suggested tests via chat") 
+
+7. Let's take the output of the chat and add it as a new file for the tests. Create a new file and call it *prime-tests.py*. You can do this from the codespace's terminal by typing the following:
+```
+code prime-tests.py
+```
+8. Switch to the new file if its not already open. Now, at the start of the code listing in the Chat interface, select the *Insert* tab and insert the code into the new *prime-tests.py* file.
+
+![copied_tests via chat](./images/codeium-53.png?raw=true "copied tests via chat") 
+  
+9. Let's double-check with Codeium for any missing test cases. With the *prime-tests.py* file open, go to the Chat interface and enter the following:
+```
+identify any missing test cases
 
 ```
-/tests
-```
-![Tests-generated tests](./images/cdd49.png?raw=true "Tests-generated tests") 
+10. After this runs for a bit, you will likely see it generating test cases for a few more areas. When its done generating them, you can select the ones you want from the suggested code and paste into your file.
 
-7. We could put this into a new file by hovering over the output in the Chat window, then selecting the "..." from the pop-up menu and selecting "Insert into new file".  Go ahead and select that option and then you'll have a new file in your editor with the code that you can save as needed.
-
-![Insert tests into new file](./images/cdd50.png?raw=true "Insert tests into new file") 
-
-![Saved generated unit tests file](./images/cdd50b-4.png?raw=true "Saved generated unit tests file") 
+![copied_tests via chat](./images/codeium-54.png?raw=true "copied tests via chat") 
+    
+11. Save the new files if desired.
 
 
 <p align="center">
