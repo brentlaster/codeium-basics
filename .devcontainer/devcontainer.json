@@ -10,7 +10,7 @@
 				"Codeium.codeium"
 			]
 		}
-	}
-
+	},
+        "postCreateCommand": ".devcontainer/postCreate.sh"
 
 }
