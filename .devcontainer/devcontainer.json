@@ -5,12 +5,15 @@
 	"customizations": {
 		// Configure properties specific to VS Code.
 		"vscode": {
-			
+	                "settings": {
+			  "remote.autoForwardPorts": false
+			},
 			"extensions": [
 				"Codeium.codeium"
 			]
 		}
 	},
-        "postCreateCommand": ".devcontainer/postCreate.sh"
+        "postCreateCommand": ".devcontainer/postCreate.sh",
+	"otherPortAttributes": { "onAutoForward" : "ignore" }
 
 }
